@@ -10,6 +10,7 @@ Features
   
 - Responsive design for desktop and mobile
 
+![Home](https://github.com/huzaifa-khanam/ShareWear/blob/7b473aada1933d604a5bce272581c53459032878/Screenshot%20(539).png)
 
 Technologies
 
