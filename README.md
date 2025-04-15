@@ -12,6 +12,8 @@ Features
 
 ![Home](https://github.com/huzaifa-khanam/ShareWear/blob/7b473aada1933d604a5bce272581c53459032878/Screenshot%20(539).png)
 
+![Product](https://github.com/huzaifa-khanam/ShareWear/blob/1643394bebb5bc4efbba5362e5da6e9f3eb6bc86/Screenshot%20(541).png)
+
 Technologies
 
 - React
