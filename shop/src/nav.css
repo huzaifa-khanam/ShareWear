@@ -1,0 +1,417 @@
+* {
+     margin: 0;
+     padding: 0;
+     font-family: sans-serif;
+     box-sizing: border-box;
+}
+
+html, body {
+     width: 100vw;
+     max-width: 100vw;
+     overflow-x: hidden;
+}
+
+.free {
+     padding: 10px 30px;
+     width: 100%;
+     background-color: black;
+     display: flex;
+}
+
+.free .icon {
+     color: #f3b123;
+     font-size: 32px;
+}
+
+.free p {
+     margin-left: 10px;
+     color: white;
+     margin-top: 8px;
+     font-size: 14px;
+     font-weight: 500;
+}
+
+.main-header {
+     padding: 15px 40px;
+     width: 100%;
+     align-items: center;
+     padding: 20px 70px;
+     background-color: #e3e6f3;
+     border-bottom: 1px solid #010f1c;
+     z-index: 999;
+     position: sticky;
+     top: 0;
+     left: 0;
+     box-sizing: border-box;
+}
+
+.main-header .container {
+     display: flex;
+     justify-content: space-between;
+}
+
+.main-header .container .logo img {
+     height: 35px;
+     width: 200px;
+}
+
+.main-header .container .search-box {
+     margin-right: 30px;
+}
+
+.main-header .container .search-box input {
+     outline: none;
+     padding: 10px 30px;
+     border: 3px solid #088178;
+     width: 300px;
+     color: #010f1c;
+}
+
+.main-header .container .search-box button {
+     border: 2.6px solid #088178;
+     outline: none;
+     padding: 9.6px 20px;
+     cursor: pointer;
+     background-color: #088178;
+     color: white;
+}
+
+.main-header .container .icon {
+     display: flex;
+     margin-right: 50px;
+     color: #088178;
+}
+
+.main-header .container .icon .account {
+     display: flex;
+     margin-right: 30px;
+}
+
+.main-header .container .icon .account .user-icon {
+     margin-right: 10px;
+     font-size: 22px;
+     color: #010f1c;
+     cursor: pointer;
+}
+
+.main-header .container .icon .account p {
+     margin-right: 5px;
+     margin-top: 2px;
+     font-weight: 500;
+     font-size: 18px;
+}
+
+.main-header .container .icon .second-icon {
+     display: flex;
+}
+
+.main-header .container .icon .second-icon .link {
+     margin-right: 5px;
+     padding: 2px 12px;
+     font-size: 22px;
+     cursor: pointer;
+     color: #088178;
+}
+
+.header {
+     width: 100%;
+     padding: 20px 30px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header .container {
+     display: flex;
+     max-width: 100%;
+     justify-content: space-between;
+}
+
+.header .container .nav ul {
+     display: flex;
+}
+
+.header .container .nav ul li {
+     margin-left: 20px;
+     list-style: none;
+     padding: 5px 10px;
+}
+
+.header .container .nav ul li .link {
+     text-decoration: none;
+     color: #010f1c;
+     transition: 0.5s;
+}
+
+.header .container .nav ul li .link:hover {
+     color: #088178;
+     text-decoration: underline;
+}
+
+.header .container .auth {
+     margin-right: 20px;
+     font-size: 22px;
+     cursor: pointer;
+}
+
+.header .container .auth button {
+     margin-right: 20px;
+     font-size: 22px;
+     cursor: pointer;
+     outline: none;
+     border: none;
+     background: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1100px) and (min-width: 970px) {
+     .main-header .container .logo img {
+          width: 190px;
+          height: 35px;
+     }
+
+     .main-header .container .search-box input {
+          width: 250px;
+          padding: 9px 27px;
+     }
+
+     .main-header .container .search-box button {
+          padding: 8px 15px;
+          font-size: 90%;
+     }
+
+     .main-header .container,
+     .header .container {
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+     }
+
+     .main-header .container .icon {
+          margin-right: 20px;
+     }
+
+     .header .container .nav ul li {
+          margin-left: 15px;
+     }
+}
+
+@media screen and (max-width: 969px) and (min-width: 700px) {
+     .main-header {
+          width: 100vw;
+          max-width: 100vw;
+          padding: 10px 15px;
+          box-sizing: border-box;
+     }
+
+     .main-header .container {
+          width: 100%;
+          max-width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: nowrap;
+          gap: 8px;
+     }
+
+     .main-header .container .logo img {
+          width: 170px;
+          height: auto;
+     }
+
+     .main-header .container .search-box {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .main-header .container .search-box input {
+          width: 100%;
+          max-width: 180px;
+          padding: 6px 12px;
+          font-size: 12px;
+     }
+
+     .main-header .container .search-box button {
+          padding: 6px 9px;
+          font-size: 82%;
+     }
+
+     .main-header .container .icon .second-icon .link {
+          font-size: 18px;
+     }
+
+     .header .container .nav ul li .link {
+          font-size: 13px;
+     }
+}
+
+@media screen and (max-width: 700px) and (min-width: 600px) {
+     .main-header {
+          width: 100vw;
+          max-width: 100vw;
+          padding: 8px 10px;
+          box-sizing: border-box;
+     }
+
+     .main-header .container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: nowrap;
+          gap: 6px;
+     }
+
+     .main-header .container .logo img {
+          width: 145px;
+          height: auto;
+     }
+
+     .main-header .container .search-box {
+          display: flex;
+          align-items: center;
+          flex: 1;
+          justify-content: center;
+     }
+
+     .main-header .container .search-box input {
+          width: 100%;
+          max-width: 140px;
+          padding: 5px 10px;
+          font-size: 11px;
+     }
+
+     .main-header .container .search-box button {
+          padding: 5px 8px;
+          font-size: 12px;
+     }
+
+     .main-header .container .icon {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+     }
+
+     .main-header .container .icon .link {
+          font-size: 12px;
+     }
+
+     .main-header .container .icon .second-icon .link {
+          font-size: 18px;
+     }
+
+     .header .container .nav ul li .link {
+          font-size: 13px;
+     }
+}
+
+@media screen and (max-width: 600px) {
+     .main-header {
+          width: 100vw;
+          max-width: 100vw;
+          padding: 6px 10px;
+          box-sizing: border-box;
+          overflow-x: hidden;
+     }
+
+     .main-header .container {
+          flex-direction: column;
+          align-items: stretch;
+          width: 100%;
+          max-width: 100%;
+          gap: 10px;
+          position: relative;
+     }
+
+     .main-header .container .logo {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+     }
+
+     .main-header .container .logo img {
+          width: 140px;
+          height: auto;
+     }
+
+     .main-header .container .icon {
+          position: absolute;
+          top: 2px;
+          right: 2px;
+          flex-direction: row;
+     }
+     .main-header .container .icon .second-icon .link {
+          font-size: 15px;
+     }
+
+
+     .main-header .container .search-box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+     }
+
+     .main-header .container .search-box input {
+          width: 60%;
+          padding: 6px 8px;
+          font-size: 11px;
+     }
+
+     .main-header .container .search-box button {
+          padding: 6px 10px;
+          font-size: 11px;
+     }
+
+     .main-header .container .account {
+          display: none;
+     }
+}
+.hamburger {
+     display: none;
+     font-size: 20px;
+     cursor: pointer;
+     color: #010f1c;
+   }
+   
+   /* Responsive Navigation */
+   @media screen and (max-width: 700px) {
+     .hamburger {
+       display: block;
+       z-index: 1001;
+     }
+   
+     .nav {
+       display: none;
+       position: absolute;
+       top: 70px;
+       left: 0;
+       width: 100%;
+       background-color: #e3e6f3;
+       font-size: 12px;
+       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+       z-index: 1000;
+     }
+   
+     .nav.open {
+       display: block;
+     }
+   
+     .nav ul {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 1rem 0;
+     }
+   
+     .nav ul li {
+       margin: 0.5rem 0;
+     }
+   
+     .auth {
+       position: absolute;
+       right: 10px;
+       top: 12px;
+     }
+   }
+   

@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.cartcontainer {
+    padding: 40px 50px;
+    width: 100%;
+    background: #f1f1f1;
+    border-bottom: 1px solid #9a9a9a;
+}
+
+.cartcontainer .emptycart {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cartcontainer .emptycart h2 {
+    font-size: 32px;
+    color: #010f1c;
+    text-transform: capitalize;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.cartcontainer .emptycart .emptycartbtn {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background: #010f1c;
+    border: none;
+    cursor: pointer;
+}
+
+.cartcontainer .contant {
+    max-width: 100%;
+    padding: 20px 30px;
+}
+
+.cartcontainer .contant .cart_item {
+    position: relative; /* <-- Added so the close button can position relative to the item */
+    padding: 20px 30px;
+    display: flex;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.cartcontainer .contant .cart_item .img_box {
+    padding: 10px;
+    background: #f1f1f1;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartcontainer .contant .cart_item .img_box img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.cartcontainer .contant .cart_item .detail {
+    margin-left: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+
+/* --- 3-Row Layout --- */
+.cartcontainer .contant .cart_item .detail .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Row 1: Lehenga, Name, Price */
+.cartcontainer .contant .cart_item .detail .info h4,
+.cartcontainer .contant .cart_item .detail .info h3,
+.cartcontainer .contant .cart_item .detail .info p:first-of-type {
+    margin: 0;
+}
+
+/* Row 2: Days section */
+.cartcontainer .contant .cart_item .detail .info .Days {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Row 3: Subtotal */
+.cartcontainer .contant .cart_item .detail .info p:last-of-type {
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* Quantity input & buttons */
+.cartcontainer .contant .cart_item .detail .info .Days input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #010f1c;
+    width: 30px;
+    text-align: center;
+}
+
+.cartcontainer .contant .cart_item .detail .info .Days .addDays,
+.cartcontainer .contant .cart_item .detail .info .Days .decDays {
+    padding: 4px 10px;
+    background: #088178;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Close button floated */
+.cartcontainer .contant .cart_item .detail .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-left: 0;
+}
+
+.cartcontainer .contant .cart_item .detail .close button {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #db0045;
+    background: none;
+    cursor: pointer;
+}
+
+.cartcontainer .totalprice {
+    margin-top: 30px;
+    margin-left: 45%;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cartcontainer .checkout {
+    margin-top: 40px;
+    margin-left: 48%;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #088178;
+    cursor: pointer;
+}
+
+/* Responsive: Medium Screens */
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+    .cartcontainer {
+        padding: 30px 40px;
+    }
+
+    .cartcontainer .emptycart h2 {
+        font-size: 24px;
+    }
+
+    .cartcontainer .contant .cart_item {
+        padding: 15px 20px;
+    }
+
+    .cartcontainer .contant .cart_item .img_box {
+        width: 120px;
+        height: 120px;
+    }
+
+    .cartcontainer .contant .cart_item .img_box img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cartcontainer .contant .cart_item .detail .info h3 {
+        font-size: 18px;
+    }
+
+    .cartcontainer .contant .cart_item .detail .info p {
+        font-size: 14px;
+    }
+
+    .cartcontainer .totalprice {
+        font-size: 18px;
+    }
+
+    .cartcontainer .checkout {
+        padding: 8px 18px;
+    }
+}
+
+/* Responsive: Small Screens */
+@media screen and (max-width: 599px) {
+    .cartcontainer {
+        padding: 10px 20px;
+    }
+
+    .cartcontainer .emptycart h2 {
+        font-size: 15px;
+    }
+
+    .cartcontainer .emptycart .emptycartbtn {
+        font-size: 10px;
+    }
+
+    .cartcontainer .contant .cart_item {
+        flex-direction: column;
+        padding: 10px 12px;
+    }
+
+    .cartcontainer .contant .cart_item .img_box {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .cartcontainer .contant .cart_item .img_box img {
+        width: 90px;
+        height: 95px;
+    }
+
+    .cartcontainer .contant .cart_item .detail {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .cartcontainer .contant .cart_item .detail .info h4,
+    .cartcontainer .contant .cart_item .detail .info h3 {
+        font-size: 12px;
+    }
+
+    .cartcontainer .contant .cart_item .detail .info p {
+        font-size: 10px;
+    }
+
+    .cartcontainer .totalprice {
+        font-size: 12px;
+        margin-left: 40%;
+    }
+
+    .cartcontainer .checkout {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .cartcontainer .contant .cart_item .detail .info .Days .addDays,
+    .cartcontainer .contant .cart_item .detail .info .Days .decDays {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+
+    .cartcontainer .contant .cart_item .detail .info .Days input {
+        font-size: 12px;
+    }
+    .cartcontainer .totalprice {
+        font-size: 11px;
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .cartcontainer .checkout {
+        display: block;
+        margin: 20px auto 0 auto;
+        font-size: 11px;
+        padding: 8px 16px;
+    }
+}

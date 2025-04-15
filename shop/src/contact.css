@@ -1,0 +1,120 @@
+* {
+     margin: 0;
+     padding: 0;
+     font-family: sans-serif;
+     box-sizing: border-box;
+}
+
+.contact_container {
+     padding: 30px 40px;
+     width: 100%;
+     background: #f6f6f6;
+}
+
+.contact_container .contant {
+     padding: 10px 20px;
+}
+
+.contact_container .contant h2 {
+     text-transform: uppercase;
+     font-size: 32px;
+     color: #010f1c;
+     font-weight: 200;
+}
+
+.contact_container .contant .form {
+     padding: 20px 30px;
+     background: #fff;
+     border-radius: 10px;
+     margin-top: 30px;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contact_container .contant .form form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.contact_container .contant .form form input,
+.contact_container .contant .form form textarea {
+     padding: 10px 30px;
+     border: none;
+     outline: none;
+     background: none;
+     border-bottom: 1px solid #010f1c;
+     max-width: 350px;
+     margin-top: 20px;
+     width: 100%; /* Make input and textarea take full width */
+}
+
+.contact_container .contant .form form textarea {
+     resize: none;
+}
+
+.contact_container .contant .form form button {
+     margin-top: 30px;
+     width: 100px;
+     padding: 10px 0;
+     border: none;
+     outline: none;
+     background: none;
+     background: #010f1c;
+     color: #fff;
+     cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media screen and (max-width: 768px) {
+     .contact_container {
+         padding: 20px 25px;
+     }
+
+     .contact_container .contant h2 {
+         font-size: 28px;
+     }
+
+     .contact_container .contant .form {
+         padding: 15px 22px;
+     }
+
+     .contact_container .contant .form form input,
+     .contact_container .contant .form form textarea {
+         max-width: 90%; /* Allow inputs to be smaller but still responsive */
+         margin-left: 0;
+     }
+
+     .contact_container .contant .form form button {
+         margin-left: 0;
+         width: 90px;
+     }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 480px) {
+     .contact_container {
+         padding: 15px 20px;
+     }
+
+     .contact_container .contant h2 {
+         font-size: 22px;
+     }
+
+     .contact_container .contant .form {
+         padding: 10px 17px;
+     }
+
+     .contact_container .contant .form form input,
+     .contact_container .contant .form form textarea {
+         max-width: 100%;
+         margin-left: 0;
+         font-size: 12px;
+     }
+
+     .contact_container .contant .form form button {
+         margin-left: 0;
+         width: 80px;
+     }
+}

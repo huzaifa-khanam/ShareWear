@@ -1,0 +1,174 @@
+* {
+     margin: 0;
+     padding: 0;
+     font-family: sans-serif;
+     box-sizing: border-box;
+ }
+ 
+ .footer {
+     padding: 30px 40px;
+     width: 100%;
+     background: #e3e6f3;
+ }
+ 
+ .footer .container {
+     max-width: 100%;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .footer .container .about {
+     max-width: 30%;
+ }
+ 
+ .footer .container .about .logo img {
+     width: 280px;
+     height: 33px;
+ }
+ 
+ .footer .container .about .detail p {
+     margin-top: 20px;
+     font-size: 16px;
+     color: #010f1c;
+ }
+ 
+ .footer .container .about .detail .icon {
+     margin-top: 20px;
+     display: flex;
+ }
+ 
+ .footer .container .about .detail .icon li {
+     margin-left: 20px;
+     list-style: none;
+     padding: 10px 10px;
+     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+     cursor: pointer;
+     transition: 0.5s;
+ }
+ 
+ .footer .container .about .detail .icon li:hover {
+     background: #088178;
+     color: #fff;
+     border-radius: 5px;
+     font-size: 16px;
+ }
+ 
+ .footer .container .account,
+ .footer .container .page {
+     margin-top: 20px;
+     margin-right: 90px;
+ }
+ 
+ .footer .container .account h3,
+ .footer .container .page h3 {
+     font-size: 28px;
+     color: #010f1c;
+ }
+ 
+ .footer .container .account ul,
+ .footer .container .page ul {
+     margin-top: 10px;
+     margin-left: 20px;
+ }
+ 
+ .footer .container .account ul li,
+ .footer .container .page ul li {
+     margin-top: 5px;
+     color: #010f1c;
+     font-size: 14px;
+     transition: 0.5s;
+     cursor: pointer;
+ }
+ 
+ .footer .container .account ul li:hover,
+ .footer .container .page ul li:hover {
+     color: #088178;
+ }
+ 
+ /* Media Queries for Responsiveness */
+ 
+ /* For screens smaller than 1000px but larger than 600px */
+ @media screen and (max-width: 1000px) and (min-width: 600px) {
+     .footer {
+         padding: 20px 25px;
+     }
+ 
+     .footer .container .about .logo img {
+         width: 150px; /* Reduce logo size */
+         height: auto;
+     }
+ 
+     .footer .container .about .detail p {
+         font-size: 12px; /* Smaller font size */
+     }
+ 
+     .footer .container .about .detail .icon li {
+         margin-left: 5px; /* Reduce margin */
+         padding: 3px;
+         font-size: 12px; /* Smaller icon size */
+     }
+ 
+     .footer .container .account h3,
+     .footer .container .page h3 {
+         font-size: 18px; /* Smaller heading size */
+     }
+ 
+     .footer .container .account ul li,
+     .footer .container .page ul li {
+         font-size: 12px; /* Smaller text size */
+     }
+ }
+ @media screen and (max-width: 599px) {
+    .footer {
+        padding: 15px 5px;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        gap: 2px;
+    }
+
+    .footer .container .about,
+    .footer .container .account,
+    .footer .container .page {
+        flex: 1;
+        max-width: 30%;
+    }
+
+    .footer .container .account {
+        margin-left: 10px;
+    }
+
+    .footer .container .page {
+        margin-left: 2px;
+    }
+
+    .footer .container .about .logo img {
+        width: 90px;
+        height: auto;
+    }
+
+    .footer .container .about .detail p {
+        font-size: 8px;
+    }
+
+    .footer .container .about .detail .icon li {
+        margin-left: 2px;
+        padding: 3px;
+        font-size: 9px;
+    }
+
+    .footer .container .account h3,
+    .footer .container .page h3 {
+        font-size: 9px;
+    }
+
+    .footer .container .account ul li,
+    .footer .container .page ul li {
+        font-size: 8px;
+    }
+}
